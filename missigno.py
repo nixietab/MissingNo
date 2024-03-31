@@ -75,7 +75,7 @@ directory_path = "./"
 output_directory_path = "./rando"
 
 for filename in os.listdir(directory_path):
-    if filename.endswith(".jpg") or filename.endswith(".png"):
+    if filename.endswith(".jpg") or filename.endswith(".png") or filename.endswith(".jpeg"):
         image_path = os.path.join(directory_path, filename)
         output_path = os.path.join(output_directory_path, filename)
         randomize_silhouette(image_path, output_path)
